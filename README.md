@@ -6,13 +6,13 @@
 * possibly we can develop higher level abstractions for SciPy , NumPy , SciKit , R , Pig , Hive and simply expose them configurable and user-friendly WorkFLow MetaModels to develop a Pipeline.
 
 ## Fetch data
-### HDFS
+##### HDFS
 ## Organize data
-### Filter
+### Filter data
 #### Pig / Hive Script
 ##### Group By
 ##### Join
-### Count
+### Count data
 ### Extract Entities (NLP Tesxt processing)
 #### Find locations, time, place, organization
 #### Apply Ontology ( Medical , Finance )
