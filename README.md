@@ -1,9 +1,9 @@
 # Bigdata analysis pipeline
-** the idea is to create a map-reduce task for every step and connect the steps to create a pipeline.
-** we can design a system where TaskMetaModel can contain necessary user params, system params and connector properties.
-** such TaskMetaModels already tried and tested as Hadoop Jobs.
-** now we can develop a SparkTaskMetaModels to generate Spark RDDs  to create in-memory distributed data analysis Pipeline
-** possibly we can develop higher level abstractions for SciPy , NumPy , SciKit , R , Pig , Hive and simply expose them configurable and user-friendly WorkFLow MetaModels to develop a Pipeline.
+* the idea is to create a map-reduce task for every step and connect the steps to create a pipeline.
+* we can design a system where TaskMetaModel can contain necessary user params, system params and connector properties.
+* such TaskMetaModels already tried and tested as Hadoop Jobs.
+* now we can develop a SparkTaskMetaModels to generate Spark RDDs  to create in-memory distributed data analysis Pipeline
+* possibly we can develop higher level abstractions for SciPy , NumPy , SciKit , R , Pig , Hive and simply expose them configurable and user-friendly WorkFLow MetaModels to develop a Pipeline.
 
 ## Fetch data
 ### HDFS
