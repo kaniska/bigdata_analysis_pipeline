@@ -37,6 +37,22 @@
 ##### Min-Hash
 ## 
 # Configuration
+### CDH Hadoop Configuration :
+#### User config
+| useradd -U -G mapred,hdfs,hadoop -m -u 5000 demo
+| usermod -G demo -a hdfs
+| usermod -G demo -a mapred
+| chmod 770 ~/demo
+| Services->hdfs1->Configuration->View and Edit->Service Wide->Security , dfs.permissions.supergroup = hadoop
+#### JVM settings
+* mapreduce1 > configuration > TaskTracker > Performance > mapred.child.java.opts : -Djavax.xml.parsers.DocumentBuilderFactory =com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+* hdfs1 > configuration > NameNode > Advanced > Java Configuration Options for NameNode : -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:- CMSConcurrentMTEnabled -XX:CMSInitiatingOccupancyFraction=70 - XX:+CMSParallelRemarkEnabled -Dcom.sun.management.jmxremote - Dcom.sun.management.jmxremote.authenticate=false -
+Dcom.sun.management.jmxremote.ssl=false - Dcom.sun.management.jmxremote.port=25002
+* hdfs1 > configuration > DataNode > Advanced > Java Configuration Options for DataNode : XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:- CMSConcurrentMTEnabled -XX:CMSInitiatingOccupancyFraction=70 - XX:+CMSParallelRemarkEnabled -Dcom.sun.management.jmxremote - Dcom.sun.management.jmxremote.authenticate=false - Dcom.sun.management.jmxremote.ssl=false - Dcom.sun.management.jmxremote.port=25001
+* mapreduce1 > configuration > JobTracker > Advanced > Java Configuration Options for JobTracker : -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:- CMSConcurrentMTEnabled -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled -Dcom.sun.management.jmxremote - Dcom.sun.management.jmxremote.authenticate=false -
+Dcom.sun.management.jmxremote.ssl=false - Dcom.sun.management.jmxremote.port=25000
+### Firewall config :
+| open ports for SSH (22) , JMX (25001-25002) , Namendoe (9000) , Jobtracker (9001) , Server (8080)
 ### Sparse vector config :
 #### Hadoop / Mahout specific setting
 * minDF = minimum document frequency
