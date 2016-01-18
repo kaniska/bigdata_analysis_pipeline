@@ -42,6 +42,7 @@
 ## 
 # Configuration
 ### CDH Hadoop Configuration :
+Sample configuration for invoking a Decision Tree MR Job as a Workflow Step
 #### User config
 * useradd -U -G mapred,hdfs,hadoop -m -u 5000 demo
 * usermod -G demo -a hdfs
