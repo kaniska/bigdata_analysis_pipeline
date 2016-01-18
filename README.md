@@ -10,29 +10,29 @@
 ## Organize data
 ### Filter data
 #### Pig / Hive Script
-- Group By
-- Join
-- Count data
+##### Group By
+##### Join
+### Count data
 ### Extract Entities (NLP Tesxt processing)
-- Find locations, time, place, organization
-- Apply Ontology ( Medical , Finance )
+#### Find locations, time, place, organization
+#### Apply Ontology ( Medical , Finance )
 ## Analyze data
 ### Social Networking ANalysis (SNA)
 ### Crawler 
-- Webscraper 
-- Twitter 
-- Facebook
-- LinkedIn
-- Stock Market
+#### Webscraper 
+#### Twitter 
+#### Facebook
+#### LinkedIn
+#### Stock Market
 ### Machine Learning (Classification, Clustering)
-- Vectorize data
-- Convert input data folder into set of sequence files
-- Convert sequenced data into sparse vectors for data analysis
-- Split data for Cross-validation
-- Create training and test data files
+#### Vectorize data
+##### convert input data folder into set of sequence files
+##### convert sequenced data into sparse vectors for data analysis
+#### Split data for Cross-validation
+##### create training and test data files
 #### Classification of data
 ##### Naive Bayes
-- [min doc freqn , max df % , max df sigma, , min log likelihood, log normalize , max NGram]
+####### [min doc freqn , max df % , max df sigma, , min log likelihood, log normalize , max NGram]
 ##### Decision Tree
 ###### 
 #### Clustering of data
@@ -42,7 +42,6 @@
 ## 
 # Configuration
 ### CDH Hadoop Configuration :
-Sample configuration for invoking a Decision Tree MR Job as a Workflow Step
 #### User config
 * useradd -U -G mapred,hdfs,hadoop -m -u 5000 demo
 * usermod -G demo -a hdfs
