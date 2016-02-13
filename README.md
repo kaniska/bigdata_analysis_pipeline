@@ -1,4 +1,4 @@
-# Bigdata Workflow  (WIP)
+# Hadoop Workflow  (WIP)
 * the idea is to create a map-reduce task for every step and connect the steps to create a pipeline.
 * we can design a system where TaskMetaModel can contain necessary user params, system params and connector properties.
 * such TaskMetaModels already tried and tested as Hadoop Jobs.
