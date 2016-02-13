@@ -1,4 +1,4 @@
-# Bigdata analysis pipeline
+# Bigdata Workflow  (WIP)
 * the idea is to create a map-reduce task for every step and connect the steps to create a pipeline.
 * we can design a system where TaskMetaModel can contain necessary user params, system params and connector properties.
 * such TaskMetaModels already tried and tested as Hadoop Jobs.
@@ -12,12 +12,12 @@
 #### Pig / Hive Script
 ##### Group By
 ##### Join
-### Count data
+##### Count data
 ### Extract Entities (NLP Tesxt processing)
 #### Find locations, time, place, organization
 #### Apply Ontology ( Medical , Finance )
 ## Analyze data
-### Social Networking ANalysis (SNA)
+### Social Networking Analysis (SNA)
 ### Crawler 
 #### Webscraper 
 #### Twitter 
